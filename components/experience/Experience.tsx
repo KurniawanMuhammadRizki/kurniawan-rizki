@@ -44,7 +44,7 @@ const experienceData: ExperienceItem[] = [
   },
 ];
 
-const Experience = () => {
+const Experience: React.FC = () => {
   return (
     <div className="w-full mx-auto px-4 sm:px-10 ">
       <div className="flex items-center gap-3 mb-8">

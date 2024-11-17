@@ -1,4 +1,3 @@
-import { NavigationMenuItem, NavigationMenuLink } from "../ui/navigation-menu";
 import { motion } from "framer-motion";
 const DesktopNavItems: React.FC = () => {
   return (
@@ -11,8 +10,8 @@ const DesktopNavItems: React.FC = () => {
         <motion.div
           key={index}
           whileHover={{
-            y: -5, // Bergerak sedikit ke atas
-            rotateY: 15, // Sedikit efek rotasi
+            y: -5,
+            rotateY: 15,
           }}
           transition={{
             type: "spring",

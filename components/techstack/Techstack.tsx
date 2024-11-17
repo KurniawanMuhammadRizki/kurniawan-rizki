@@ -1,5 +1,4 @@
 import React from "react";
-import { GraduationCap } from "lucide-react";
 import AnimationPopupWrapper from "../animations/AnimationPopupWrapper";
 import {
   SiC,
@@ -133,7 +132,6 @@ const Techstack: React.FC = () => {
   return (
     <div className="w-full mx-auto px-4 sm:px-10">
       <div className="flex items-center gap-3 mb-8">
-        {/* <GraduationCap className="w-8 h-8 " /> */}
         <RiComputerFill className="w-8 h-8" />
         <h2 className="text-2xl font-medium">My Tech Stack</h2>
       </div>

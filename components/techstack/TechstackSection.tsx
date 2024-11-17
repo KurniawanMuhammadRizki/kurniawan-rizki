@@ -1,6 +1,5 @@
 import React from "react";
 import AnimationPopupWrapper from "../animations/AnimationPopupWrapper";
-import Education from "../education/Education";
 import Techstack from "./Techstack";
 
 const TechstackSection: React.FC = () => {
