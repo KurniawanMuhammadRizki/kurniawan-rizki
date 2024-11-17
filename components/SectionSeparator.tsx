@@ -7,11 +7,13 @@ interface SectionSeparatorProps {
   imgUrl: string;
   title: string;
   subTitle: string;
+  id: string;
 }
 const SectionSeparator: React.FC<SectionSeparatorProps> = ({
   imgUrl,
   title,
   subTitle,
+  id,
 }) => {
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -22,6 +24,7 @@ const SectionSeparator: React.FC<SectionSeparatorProps> = ({
 
   return (
     <div
+      id={id}
       ref={container}
       className="relative flex items-center justify-center h-screen overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>

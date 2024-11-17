@@ -4,9 +4,9 @@ const DesktopNavItems: React.FC = () => {
   return (
     <div className="flex items-center space-x-8">
       {[
-        { label: "Projects", href: "/" },
-        { label: "About", href: "/" },
-        { label: "Contact", href: "/" },
+        { label: "Projects", href: "#projects" },
+        { label: "About", href: "#about" },
+        { label: "Contact", href: "#contact" },
       ].map((item, index) => (
         <motion.div
           key={index}
