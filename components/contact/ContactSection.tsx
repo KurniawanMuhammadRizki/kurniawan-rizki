@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => {
         referrerPolicy="no-referrer"
         sandbox="allow-same-origin allow-scripts allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe>
       <div className="hero-overlay bg-black bg-opacity-60 absolute inset-0"></div>
-      <div className="text-white flex flex-col items-start justify-between h-full p-8">
+      <div className="text-white flex flex-col items-start justify-between h-full pt-24 p-8">
         <div className="flex justify-end w-full space-x-4 text-sm tracking-wide uppercase z-30">
           <Link
             href="https://github.com/KurniawanMuhammadRizki"
