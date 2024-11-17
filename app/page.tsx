@@ -1,10 +1,37 @@
+"use client";
 import AnimationPopupWrapper from "@/components/animations/AnimationPopupWrapper";
 import Hero from "@/components/Hero";
+import ProjectsSection from "@/components/projects/ProjectsSection";
+import Projects from "@/components/projects/ProjectsSection";
+import Lenis from "lenis";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    // Inisialisasi Lenis
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+
+    // Tambahkan event listener untuk scroll
+    const handleScroll = (e) => {
+      console.log(e);
+    };
+    lenis.on("scroll", handleScroll);
+
+    // Bersihkan event listener saat komponen di-unmount
+    return () => {
+      lenis.off("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div>
+    <div className="relative">
       <Hero />
+      <div className="bg-red-500 min-h-[100vh] relative z-10">
+        project cover
+      </div>
+      <ProjectsSection />
+      <div className="bg-red-500 min-h-[100vh] relative z-10">oi</div>
     </div>
   );
 }

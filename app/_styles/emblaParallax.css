@@ -1,0 +1,18 @@
+.embla__parallax {
+  height: 100%;
+  overflow: hidden;
+}
+
+.embla__parallax__layer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.embla__parallax__img {
+  max-width: none;
+  flex: 0 0 calc(115% + 2rem);
+  object-fit: cover;
+}
