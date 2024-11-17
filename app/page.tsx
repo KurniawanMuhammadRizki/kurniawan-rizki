@@ -1,43 +1,61 @@
 "use client";
-import AnimationPopupWrapper from "@/components/animations/AnimationPopupWrapper";
-import EducationSection from "@/components/education/EducationSection";
-import ExperienceSection from "@/components/experience/ExperienceSection";
-import Hero from "@/components/Hero";
-import ProfileSection from "@/components/profile/ProfileSection";
-import ProjectsSection from "@/components/projects/ProjectsSection";
-import Projects from "@/components/projects/ProjectsSection";
+import React, { useEffect, Suspense } from "react";
 import Lenis from "lenis";
-import { useEffect } from "react";
+import TechstackSection from "@/components/techstack/TechstackSection";
+//import ProjectsSection from "@/components/projects/ProjectsSection";
+//import ProfileSection from "@/components/profile/ProfileSection";
+//import ExperienceSection from "@/components/experience/ExperienceSection";
+//import EducationSection from "@/components/education/EducationSection";
+//import Hero from "@/components/Hero";
+
+const Hero = React.lazy(() => import("@/components/Hero"));
+const ProjectsSection = React.lazy(
+  () => import("@/components/projects/ProjectsSection")
+);
+const ProfileSection = React.lazy(
+  () => import("@/components/profile/ProfileSection")
+);
+const ExperienceSection = React.lazy(
+  () => import("@/components/experience/ExperienceSection")
+);
+const EducationSection = React.lazy(
+  () => import("@/components/education/EducationSection")
+);
 
 export default function Home() {
   useEffect(() => {
-    // Inisialisasi Lenis
     const lenis = new Lenis({
       autoRaf: true,
     });
 
-    // Tambahkan event listener untuk scroll
-    const handleScroll = (e) => {
-      //console.log(e);
-    };
-    lenis.on("scroll", handleScroll);
-
-    // Bersihkan event listener saat komponen di-unmount
     return () => {
-      lenis.off("scroll", handleScroll);
+      lenis.destroy();
     };
   }, []);
+
   return (
     <div className="relative">
-      <Hero />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Hero />
+      </Suspense>
       <div className="bg-red-500 min-h-[100vh] relative z-10">
         project cover
       </div>
-      <ProjectsSection />
-      {/* <div className="bg-red-500 min-h-[100vh] relative z-10">oi</div> */}
-      <ProfileSection />
-      <ExperienceSection />
-      <EducationSection />
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProjectsSection />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProfileSection />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ExperienceSection />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <EducationSection />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <TechstackSection />
+      </Suspense>
       <div className="h-5"></div>
     </div>
   );
