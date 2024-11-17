@@ -40,7 +40,7 @@ const ProjectsSection: React.FC = () => {
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
-                  href="https://your-link.com"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline">
@@ -72,7 +72,7 @@ const ProjectsSection: React.FC = () => {
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
-                  href="https://your-link.com"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline">
@@ -98,7 +98,7 @@ const ProjectsSection: React.FC = () => {
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
-                  href="https://your-link.com"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline">
