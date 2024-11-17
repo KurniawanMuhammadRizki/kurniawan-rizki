@@ -13,7 +13,6 @@ interface AnimationPopupWrapperProps {
 const AnimationPopupWrapper: React.FC<AnimationPopupWrapperProps> = ({
   children,
   transition,
-  y,
 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({

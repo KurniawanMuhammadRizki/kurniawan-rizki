@@ -21,10 +21,10 @@ const ProfileSection: React.FC = () => {
             believes in the magic of technology. Armed with a strong foundation
             in Informatics Engineering and enriched by the comprehensive
             Software Engineering program at Purwadhika Digital Technology
-            School, I've dedicated myself to mastering the art of full-stack
-            development. From my base in Depok, Indonesia, I craft digital
-            solutions that bridge imagination and functionality, fueled by
-            creativity and, of course, a good cup of coffee.
+            School, I&apos;ve dedicated myself to mastering the art of
+            full-stack development. From my base in Depok, Indonesia, I craft
+            digital solutions that bridge imagination and functionality, fueled
+            by creativity and, of course, a good cup of coffee.
           </p>
         </AnimationPopupWrapper>
       </div>

@@ -14,8 +14,8 @@ const ExperienceSection: React.FC = () => {
               <div className="pr-8">
                 <h1 className="text-4xl font-bold mb-4">My Experience</h1>
                 <p className="text-lg text-gray-600">
-                  Throughout my career as a Software Developer, I've had the
-                  privilege of working with some very talented people.
+                  Throughout my career as a Software Developer, I&apos;ve had
+                  the privilege of working with some very talented people.
                 </p>
               </div>
             </AnimationPopupWrapper>

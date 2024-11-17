@@ -14,7 +14,7 @@ const TechstackSection: React.FC = () => {
               <div className="pr-8">
                 <h1 className="text-4xl font-bold mb-4">My Tech Stack</h1>
                 <p className="text-lg text-gray-600">
-                  Over the years, I've built expertise in a wide range of
+                  Over the years, I&apos;ve built expertise in a wide range of
                   technologies, including front-end frameworks, back-end
                   systems, cloud platforms, and development tools, enabling me
                   to deliver robust and scalable solutions.
