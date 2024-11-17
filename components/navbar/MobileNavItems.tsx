@@ -4,17 +4,17 @@ const MobileNavItems: React.FC = () => {
   return (
     <div className="flex flex-col space-y-4">
       <Link
-        href="/become-tenant"
+        href="#projects"
         className="text-sm font-medium hover:text-greenr hover:font-medium">
         Projects
       </Link>
       <Link
-        href={"/"}
+        href={"#about"}
         className="text-sm font-medium hover:text-greenr hover:font-medium">
         About
       </Link>
       <Link
-        href={"/"}
+        href={"#contact"}
         className="text-sm font-medium hover:text-greenr hover:font-medium">
         Contact
       </Link>
