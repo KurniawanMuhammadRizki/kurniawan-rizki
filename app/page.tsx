@@ -1,6 +1,9 @@
 "use client";
 import AnimationPopupWrapper from "@/components/animations/AnimationPopupWrapper";
+import EducationSection from "@/components/education/EducationSection";
+import ExperienceSection from "@/components/experience/ExperienceSection";
 import Hero from "@/components/Hero";
+import ProfileSection from "@/components/profile/ProfileSection";
 import ProjectsSection from "@/components/projects/ProjectsSection";
 import Projects from "@/components/projects/ProjectsSection";
 import Lenis from "lenis";
@@ -15,7 +18,7 @@ export default function Home() {
 
     // Tambahkan event listener untuk scroll
     const handleScroll = (e) => {
-      console.log(e);
+      //console.log(e);
     };
     lenis.on("scroll", handleScroll);
 
@@ -31,7 +34,11 @@ export default function Home() {
         project cover
       </div>
       <ProjectsSection />
-      <div className="bg-red-500 min-h-[100vh] relative z-10">oi</div>
+      {/* <div className="bg-red-500 min-h-[100vh] relative z-10">oi</div> */}
+      <ProfileSection />
+      <ExperienceSection />
+      <EducationSection />
+      <div className="h-5"></div>
     </div>
   );
 }

@@ -74,14 +74,27 @@ const Navbar: React.FC<NavbarProps> = ({ initialColor }) => {
   useEffect(() => {
     const sections = document.querySelectorAll<HTMLElement>("section");
 
+    //     const handleScroll = () => {
+    //       let targetColor: "white" | "black" = "white";
+    //       for (const section of sections) {
+    //         const rect = section.getBoundingClientRect();
+    //         if (rect.top <= 0 && rect.bottom >= 0) {
+    //           targetColor = section.getAttribute("data-nav-color") as
+    //             | "white"
+    //             | "black";
+    //           break;
+    //         }
+    //       }
+    //       setNavbarColor(targetColor);
+    //     };
     const handleScroll = () => {
       let targetColor: "white" | "black" = "white";
       for (const section of sections) {
         const rect = section.getBoundingClientRect();
         if (rect.top <= 0 && rect.bottom >= 0) {
-          targetColor = section.getAttribute("data-nav-color") as
-            | "white"
-            | "black";
+          const color = section.getAttribute("data-nav-color");
+          console.log(`Detected section color: ${color}`); // Debugging
+          targetColor = color as "white" | "black";
           break;
         }
       }

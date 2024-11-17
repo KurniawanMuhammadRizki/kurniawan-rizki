@@ -40,7 +40,9 @@ const ProjectsSection: React.FC = () => {
         {/* Container untuk slides */}
         <motion.div className="flex h-full" style={{ x: translateX }}>
           {/* Section 1 */}
-          <section className="min-w-full h-full flex flex-col items-center justify-center bg-white text-black">
+          <section
+            data-nav-color="black"
+            className="min-w-full h-full flex flex-col items-center justify-center bg-white text-black">
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
@@ -80,7 +82,9 @@ const ProjectsSection: React.FC = () => {
               <div className="w-full h-64 bg-gray-800 rounded-lg"></div>
             </div>
           </section> */}
-          <section className="min-w-full h-full flex flex-col items-center justify-center bg-white text-black">
+          <section
+            data-nav-color="black"
+            className="min-w-full h-full flex flex-col items-center justify-center bg-white text-black">
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
@@ -107,7 +111,9 @@ const ProjectsSection: React.FC = () => {
           </section>
 
           {/* Section 3 */}
-          <section className="min-w-full h-full flex flex-col items-center justify-center bg-white text-black">
+          <section
+            data-nav-color="black"
+            className="min-w-full h-full flex flex-col items-center justify-center bg-white text-black">
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
