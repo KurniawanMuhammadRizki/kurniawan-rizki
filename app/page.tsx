@@ -2,6 +2,9 @@
 import React, { useEffect, Suspense } from "react";
 import Lenis from "lenis";
 import TechstackSection from "@/components/techstack/TechstackSection";
+import Section from "@/components/SectionSeparator";
+import SectionSeparator from "@/components/SectionSeparator";
+import CertificationSection from "@/components/certifications/CertificationSection";
 //import ProjectsSection from "@/components/projects/ProjectsSection";
 //import ProfileSection from "@/components/profile/ProfileSection";
 //import ExperienceSection from "@/components/experience/ExperienceSection";
@@ -38,12 +41,20 @@ export default function Home() {
       <Suspense fallback={<div>Loading...</div>}>
         <Hero />
       </Suspense>
-      <div className="bg-red-500 min-h-[100vh] relative z-10">
-        project cover
-      </div>
+      <SectionSeparator
+        imgUrl="/images/montain.jpg"
+        title="Projects"
+        subTitle="a lot of creativity, a lot of coffee, and endless coding these projects are the result!"
+      />
+
       <Suspense fallback={<div>Loading...</div>}>
         <ProjectsSection />
       </Suspense>
+      <SectionSeparator
+        imgUrl="/images/city.jpg"
+        title="About"
+        subTitle="Through a blend of passion, academic foundation, real-world skills, and personal values. Discover the journey that shaped my perspective in software development"
+      />
       <Suspense fallback={<div>Loading...</div>}>
         <ProfileSection />
       </Suspense>
@@ -56,6 +67,13 @@ export default function Home() {
       <Suspense fallback={<div>Loading...</div>}>
         <TechstackSection />
       </Suspense>
+      <SectionSeparator
+        imgUrl="/images/sea.jpg"
+        title="Contact"
+        subTitle="Let's make magic happen! Connect with me, and let's build something amazing together. I'm here and ready to chat!"
+      />
+      <CertificationSection />
+
       <div className="h-5"></div>
     </div>
   );
