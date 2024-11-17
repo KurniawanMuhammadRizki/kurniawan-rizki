@@ -3,6 +3,5 @@
 @tailwind utilities;
 
 nav {
-  /* Biar background transparan tapi tetap ada border */
   background: rgba(255, 255, 255, 0.1);
 }

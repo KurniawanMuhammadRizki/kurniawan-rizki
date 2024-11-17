@@ -77,7 +77,9 @@ export default function Home() {
         title="Contact"
         subTitle="Let's make magic happen! Connect with me, and let's build something amazing together. I'm here and ready to chat!"
       />
-      <ContactSection />
+      <Suspense fallback={<div>Loading...</div>}>
+        <ContactSection />
+      </Suspense>
 
       <div className="h-10 bg-black"></div>
     </div>
