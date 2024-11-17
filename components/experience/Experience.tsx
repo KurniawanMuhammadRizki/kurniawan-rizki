@@ -1,5 +1,5 @@
 import React from "react";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase } from "lucide-react";
 import Image from "next/image";
 import AnimationPopupWrapper from "../animations/AnimationPopupWrapper";
 
@@ -32,7 +32,7 @@ const experienceData: ExperienceItem[] = [
     position: "IT Support Intern",
     company: "PT.Bank Sulselbar",
     location: "Makassar",
-    period: "Nov 2021 - Jan 2022",
+    period: "November 2021 - January 2022",
     logo: "/experience/logoBankSulselbar.png",
     achievements: [
       "Inputting, verifying, and validating payment orders document.",
@@ -48,7 +48,7 @@ const Experience = () => {
   return (
     <div className="w-full mx-auto px-4 sm:px-10 ">
       <div className="flex items-center gap-3 mb-8">
-        <GraduationCap className="w-8 h-8 " />
+        <Briefcase className="w-8 h-8 " />
         <h2 className="text-2xl font-medium">Experience</h2>
       </div>
 

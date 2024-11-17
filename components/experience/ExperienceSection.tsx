@@ -1,22 +1,8 @@
 import React from "react";
 import AnimationPopupWrapper from "../animations/AnimationPopupWrapper";
-import Education from "../education/Education";
 import Experience from "./Experience";
-const experiences = [
-  { role: "Creative Director", company: "Westcom", year: "2024 - 2025" },
-  { role: "Design Director", company: "Teamled", year: "2023 - 2024" },
-  { role: "Senior Designer", company: "Triple Works", year: "2022 - 2023" },
-  { role: "Designer", company: "On Form", year: "2022 - 2023" },
-  { role: "Junior Designer", company: "ANYA", year: "2021 - 2022" },
-  // Duplicate entries untuk contoh scroll
-  { role: "Creative Director", company: "Westcom", year: "2024 - 2025" },
-  { role: "Design Director", company: "Teamled", year: "2023 - 2024" },
-  { role: "Senior Designer", company: "Triple Works", year: "2022 - 2023" },
-  { role: "Designer", company: "On Form", year: "2022 - 2023" },
-  { role: "Junior Designer", company: "ANYA", year: "2021 - 2022" },
-];
 
-const ExperienceSection = () => {
+const ExperienceSection: React.FC = () => {
   return (
     <section data-nav-color="black" className="min-h-screen">
       <div className="max-w-7xl mx-auto px-5 sm:px-10">
