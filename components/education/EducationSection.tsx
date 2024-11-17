@@ -2,7 +2,7 @@ import React from "react";
 import AnimationPopupWrapper from "../animations/AnimationPopupWrapper";
 import Education from "../education/Education";
 
-const EducationSection = () => {
+const EducationSection: React.FC = () => {
   return (
     <section data-nav-color="black" className="min-h-screen">
       <div className="max-w-7xl mx-auto px-5 sm:px-10">
