@@ -30,7 +30,7 @@ import { MdOutlinePayment } from "react-icons/md";
 
 const projectData = {
   rooms: {
-    title: "A Full Stack Project (Back End and Front End)",
+    title: "A Full Stack Project",
     descriptionList: [
       "This project is a web-based application designed with a mobile-first approach to ensure optimal user experience across devices. It offers two roles: user and tenant. Users can explore accommodations based on destination and availability, filter results by price, and even compare properties across different dates. If a property is unavailable on a selected date, the system clearly marks it. Meanwhile, tenants can manage property availability, adjust pricing dynamically based on specific dates, and track sales reports. A built-in review system allows users to leave feedback after their stay, with tenants having the option to respond.",
       "This project is a result of teamwork between me and Hizkia Sihombing, where we each focused on our own tasks and features.",
