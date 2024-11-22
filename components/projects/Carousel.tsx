@@ -22,7 +22,7 @@ const Carousel: React.FC<CarouselProps> = ({ projectsName, imageNumber }) => {
 
   return (
     <>
-      <div className="flex justify-center items-center text-lg font-light ">
+      <div className="flex justify-center items-center text-lg font-medium ">
         A sneak peek into the project
       </div>
       <EmblaParallaxCarousel

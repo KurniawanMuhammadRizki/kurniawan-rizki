@@ -23,7 +23,7 @@ const TechstackSection: React.FC = () => {
             </AnimationPopupWrapper>
           </div>
 
-          <div className="pt-32 pb-14">
+          <div className="pt-32 pb-4">
             <Techstack />
           </div>
         </div>
