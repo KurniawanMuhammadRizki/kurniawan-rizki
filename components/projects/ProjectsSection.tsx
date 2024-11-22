@@ -40,7 +40,7 @@ const ProjectsSection: React.FC = () => {
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
-                  href="/"
+                  href="/project/rooms"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline">
@@ -49,7 +49,6 @@ const ProjectsSection: React.FC = () => {
                 </Link>
               </h2>
               <ul className="list-disc pl-5">
-                {" "}
                 <li>
                   Property rental platform developed collaboratively with a
                   partner
@@ -72,7 +71,7 @@ const ProjectsSection: React.FC = () => {
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
-                  href="/"
+                  href="/project/kukivent"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline">
@@ -81,7 +80,6 @@ const ProjectsSection: React.FC = () => {
                 </Link>
               </h2>
               <ul className="list-disc pl-5">
-                {" "}
                 <li>Event management platform</li>
                 <li>Built and maintained Spring REST API architecture</li>
                 <li>Role: Backend developer</li>
@@ -98,7 +96,7 @@ const ProjectsSection: React.FC = () => {
             <div className="max-w-4xl w-full p-8">
               <h2 className="text-4xl font-bold mt-2 mb-2 flex items-center">
                 <Link
-                  href="/"
+                  href="/project/kukilabs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline">
@@ -107,7 +105,6 @@ const ProjectsSection: React.FC = () => {
                 </Link>
               </h2>
               <ul className="list-disc pl-5">
-                {" "}
                 <li>Solo project: Company profile website</li>
                 <li>Fully developed using Next.js and Typescript</li>
                 <li>Handled complete development lifecycle</li>
