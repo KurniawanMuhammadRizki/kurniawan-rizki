@@ -74,6 +74,10 @@ const projectData = {
         "Let's dive in and simulate the process of booking a room at Rooms!",
       link: "https://rooms-hizkia-sihombings-projects.vercel.app/",
     },
+    repositoryLink: {
+      frontendLink: "https://github.com/hizkiarss/rooms_frontend",
+      backendLink: "https://github.com/KurniawanMuhammadRizki/rooms-backend",
+    },
     hero: {
       title: "Rooms",
       subtitle: "Property Renting Website",
@@ -131,6 +135,11 @@ const projectData = {
       description: "Let's explore Kukivent!",
       link: "https://event-organizer-beta.vercel.app/",
     },
+    repositoryLink: {
+      frontendLink: "https://github.com/iqbalya25/Event_Organizer",
+      backendLink:
+        "https://github.com/KurniawanMuhammadRizki/kuivent-event-management",
+    },
     hero: {
       title: "Kukivent",
       subtitle: "Event Management Platform",
@@ -170,6 +179,11 @@ const projectData = {
       description:
         "Explore Kukilabs to see how a company profile can come to life with sleek and modern design.",
       link: "https://kuki-code-challenge-2.vercel.app/",
+    },
+    repositoryLink: {
+      frontendLink:
+        "https://github.com/KurniawanMuhammadRizki/kuki-code-challenge-2",
+      backendLink: "#",
     },
     hero: {
       title: "Kukilabs",

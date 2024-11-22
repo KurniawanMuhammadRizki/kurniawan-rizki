@@ -1,4 +1,5 @@
 import Carousel from "@/components/projects/Carousel";
+import ProjectRepository from "./ProjectRepository";
 import ProjectCta from "./ProjectsCta";
 import ProjectTechStack from "./ProjectTechStack";
 
@@ -14,6 +15,10 @@ interface ProjectDetailProps {
     description: string;
     link: string;
   };
+  repositoryLink: {
+    frontendLink: string;
+    backendLink: string;
+  };
 }
 
 const ProjectDetail: React.FC<ProjectDetailProps> = ({
@@ -22,6 +27,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
   techStack,
   carousel,
   cta,
+  repositoryLink,
 }) => {
   return (
     <section className="w-full px-5 sm:px-10 py-8" data-nav-color="black">
@@ -35,6 +41,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
       </ul>
 
       <ProjectCta description={cta.description} link={cta.link} />
+      <ProjectRepository
+        frontendLink={repositoryLink.frontendLink}
+        backendLink={repositoryLink.backendLink}
+      />
       <Carousel
         projectsName={carousel.projectsName}
         imageNumber={carousel.imageNumber}

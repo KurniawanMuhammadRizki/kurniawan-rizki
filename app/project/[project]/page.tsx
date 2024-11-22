@@ -25,7 +25,6 @@ const Page = () => {
     <div>
       <ProjectHero {...currentProject.hero} />
       <ProjectDetail {...currentProject} />
-      <section className="w-full h-[500px]" data-nav-color="black"></section>
       <div className="h-10"></div>
     </div>
   );
