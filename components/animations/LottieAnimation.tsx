@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import { LottieComponentProps } from "lottie-react";
 
 interface LottieAnimationProps extends Partial<LottieComponentProps> {
-  animationData: any;
+  animationData: unknown;
 }
 
 const LottieAnimation: React.FC<LottieAnimationProps> = ({
