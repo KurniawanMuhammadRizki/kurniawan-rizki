@@ -1,5 +1,6 @@
 "use client";
 
+import NotFoundAnimation from "@/components/animations/NotFoundAnimation";
 import projectData from "@/types/project/ProjectData";
 import { useParams } from "next/navigation";
 import ProjectDetail from "./component/ProjectDetail";
@@ -13,6 +14,7 @@ const Page = () => {
   if (!currentProject) {
     return (
       <div className="flex flex-col items-center justify-center h-screen">
+        <NotFoundAnimation />
         <h1 className="text-2xl font-semibold">Project not found</h1>
         <p className="text-gray-600">
           Please check the URL or try again later.

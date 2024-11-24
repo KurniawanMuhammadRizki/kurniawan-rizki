@@ -3,6 +3,7 @@ import React, { useEffect, Suspense } from "react";
 import Lenis from "lenis";
 import TechstackSection from "@/components/techstack/TechstackSection";
 import SectionSeparator from "@/components/SectionSeparator";
+import LoadingStateAnimation from "@/components/animations/LoadingStateAnimation";
 
 const Hero = React.lazy(() => import("@/components/Hero"));
 const ProjectsSection = React.lazy(
@@ -37,7 +38,7 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingStateAnimation />}>
         <Hero />
       </Suspense>
       <SectionSeparator
@@ -47,7 +48,7 @@ export default function Home() {
         subTitle="a lot of creativity, a lot of coffee, and endless coding these projects are the result!"
       />
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingStateAnimation />}>
         <ProjectsSection />
       </Suspense>
       <SectionSeparator
@@ -56,19 +57,19 @@ export default function Home() {
         title="About"
         subTitle="Through a blend of passion, academic foundation, real-world skills, and personal values. Discover the journey that shaped my perspective in software development"
       />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingStateAnimation />}>
         <ProfileSection />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingStateAnimation />}>
         <ExperienceSection />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingStateAnimation />}>
         <EducationSection />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingStateAnimation />}>
         <CertificationSection />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingStateAnimation />}>
         <TechstackSection />
       </Suspense>
       <SectionSeparator
@@ -77,7 +78,7 @@ export default function Home() {
         title="Contact"
         subTitle="Let's make magic happen! Connect with me, and let's build something amazing together. I'm here and ready to chat!"
       />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingStateAnimation />}>
         <ContactSection />
       </Suspense>
 
