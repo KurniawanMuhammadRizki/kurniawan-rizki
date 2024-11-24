@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section data-nav-color="white" className="hero min-h-[100vh] relative">
+    <section
+      data-nav-color="white"
+      className="hero min-h-[100vh] relative"
+      id="top">
       <iframe
         src="https://my.spline.design/jeportsmileycopy-5983c6036a9c91f85b98523afbab89e8/"
         className="absolute inset-0 w-full h-full object-cover"

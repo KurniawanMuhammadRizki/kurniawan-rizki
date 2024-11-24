@@ -1,3 +1,4 @@
+import { goToDiv } from "@/utils/scroll/goToDiv";
 import Link from "next/link";
 import React from "react";
 
@@ -48,9 +49,11 @@ const ContactSection: React.FC = () => {
         </div>
 
         <div className="flex justify-between items-center w-full mt-8 text-sm z-30">
-          <Link href="#" className="tracking-wide uppercase">
-            {"< Back to Top >"}
-          </Link>
+          <div onClick={() => goToDiv("top")}>
+            <a className="tracking-wide uppercase cursor-pointer">
+              {"< Back to Top >"}
+            </a>
+          </div>
         </div>
       </div>
     </section>
