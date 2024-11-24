@@ -28,7 +28,7 @@ const ContactSection: React.FC = () => {
             LinkedIn
           </Link>
           <Link
-            href="https://drive.google.com/file/d/12llhuJ6sHAfz3i190gUb99Ar-tdM5jYj/view?usp=sharing"
+            href="https://drive.google.com/file/d/1DhHpPiqbxW8HgUNuFPoiIvjRXS4aKr7U/view?usp=sharing"
             target="_blank">
             Download CV
           </Link>
