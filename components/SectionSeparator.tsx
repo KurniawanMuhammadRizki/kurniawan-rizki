@@ -27,8 +27,8 @@ const SectionSeparator: React.FC<SectionSeparatorProps> = ({
       ref={container}
       className="relative flex items-center justify-center h-screen overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
-      <div className="relative z-10 p-20 mix-blend-difference text-white w-full h-full flex flex-col justify-between">
-        <p className="w-[50vw] text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold self-end uppercase mix-blend-difference">
+      <div className="relative z-10 p-8 md:p-20 mix-blend-difference text-white w-full h-full flex flex-col justify-between">
+        <p className="w-full md:w-[50vw] text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold self-end uppercase mix-blend-difference">
           {subTitle}
         </p>
         <p className="text-4xl md:text-5xl lg:text-7xl font-extrabold uppercase mix-blend-difference">

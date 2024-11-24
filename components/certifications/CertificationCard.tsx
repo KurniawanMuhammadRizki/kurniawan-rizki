@@ -47,7 +47,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="relative flex flex-col rounded-3xl p-6 w-full max-w-4xl h-[300px] mx-4 lg:mx-auto shadow-lg">
+        className="relative flex flex-col rounded-3xl p-6 w-full max-w-4xl h-[400px] md:h-[300px] mx-4 lg:mx-auto shadow-lg">
         <h2 className="text-3xl font-semibold text-gray-800 mb-8">{title}</h2>
 
         <div className="flex flex-row gap-12 h-full">
